@@ -363,7 +363,7 @@ La normalización como su nombre lo indica nos ayuda a dejar todo de una forma n
 
 Generar los campos básicos de cada entidad
 
-![src/diagrama_Fisico_paso_1.png](src/diagrama_Fisico_paso_1.png)
+![src/diagrama_Fisico_paso_1.png](src/diagrama_fisico_paso_1.png)
 
 #### Diagrama fisico Paso 2
 
