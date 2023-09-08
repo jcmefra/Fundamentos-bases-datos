@@ -330,10 +330,11 @@ Char(8) reserva 8 espacios en memoria de forma fija, Varchar(8) hace lo mismo pe
 
 La normalización como su nombre lo indica nos ayuda a dejar todo de una forma normal. Esto obedece a las 12 reglas de Codd y nos permiten separar componentes en la base de datos:
 
-**Primera forma normal (1FN):** Atributos atómicos (Sin campos repetidos)
-**Segunda forma normal (2FN):** Cumple 1FN y cada campo de la tabla debe depender de una clave única.
-**Tercera forma normal (3FN):** Cumple 1FN y 2FN y los campos que NO son clave, NO deben tener dependencias.
-**Cuarta forma normal (4FN):** Cumple 1FN, 2FN, 3FN y los campos multivaluados se identifican por una clave única.
+- **Primera forma normal (1FN):** Atributos atómicos (Sin campos repetidos)
+- **Segunda forma normal (2FN):** Cumple 1FN y cada campo de la tabla debe depender de una clave única.
+- **Tercera forma normal (3FN):** Cumple 1FN y 2FN y los campos que NO son clave, NO deben tener dependencias.
+- **Cuarta forma normal (4FN):** Cumple 1FN, 2FN, 3FN y los campos multivaluados se identifican por una clave única.
+
 
 ![src/diagrama_fisico_sin_normalizar.png](src/diagrama_fisico_sin_normalizar.png)
 
