@@ -307,10 +307,10 @@ Para llevar a la práctica un diagrama debemos ir más allá y darle detalle con
 
 #### Tipos de dato
 
-**- Texto:** CHAR(n), VARCHAR(n), TEXT
-**- Números:** INTEGER, BIGINT, SMALLINT, DECIMAL(n,s), NUMERIC(n,s)
-**- Fecha/hora:** DATE, TIME, DATETIME, TIMESTAMP
-**- Lógicos:** BOOLEAN
+- **Texto:** CHAR(n), VARCHAR(n), TEXT
+- **Números:** INTEGER, BIGINT, SMALLINT, DECIMAL(n,s), NUMERIC(n,s)
+- **Fecha/hora:** DATE, TIME, DATETIME, TIMESTAMP
+- **Lógicos:** BOOLEAN
 
 Nota:
 
@@ -318,13 +318,13 @@ Char(8) reserva 8 espacios en memoria de forma fija, Varchar(8) hace lo mismo pe
 
 #### Constraints (Restricciones)
 
-**- NOT NULL:** Se asegura que la columna no tenga valores nulos
-**- UNIQUE:** Se asegura que cada valor en la columna no se repita
-**- PRIMARY KEY:** Es una combinación de NOT NULL y UNIQUE
-**- FOREIGN KEY:** Identifica de manera única una tupla en otra tabla
-**- CHECK:** Se asegura que el valor en la columna cumpla una condición dada
-**- DEFAULT:** Coloca un valor por defecto cuando no hay un valor especificado
-**- INDEX:** Se crea por columna para permitir búsquedas más rápidas, tiene la desventaja de que tiene que reindexar los registros cada vez, lo que vuelve muy lenta la operación de la bd.
+- **NOT NULL:** Se asegura que la columna no tenga valores nulos
+- **UNIQUE:** Se asegura que cada valor en la columna no se repita
+- **PRIMARY KEY:** Es una combinación de NOT NULL y UNIQUE
+- **FOREIGN KEY:** Identifica de manera única una tupla en otra tabla
+- **CHECK:** Se asegura que el valor en la columna cumpla una condición dada
+- **DEFAULT:** Coloca un valor por defecto cuando no hay un valor especificado
+- **INDEX:** Se crea por columna para permitir búsquedas más rápidas, tiene la desventaja de que tiene que reindexar los registros cada vez, lo que vuelve muy lenta la operación de la bd.
 
 ### Clase 10 Diagrama Físico: normalizacion
 
