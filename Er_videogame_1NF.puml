@@ -1,0 +1,104 @@
+@startuml Normalized_ER_Diagram
+
+!define ENTITY entity
+!define PK <<PK>>
+!define FK <<FK>>
+
+' Entities
+ENTITY "Game" AS game {
+  +GameID : PK
+  Title
+  ReleaseDate
+  +PublisherID : FK
+  +DeveloperID : FK
+}
+
+ENTITY "Publisher" AS publisher {
+  +PublisherID : PK
+  PublisherName
+}
+
+ENTITY "Developer" AS developer {
+  +DeveloperID : PK
+  DeveloperName
+}
+
+ENTITY "Player" AS player {
+  +PlayerID : PK
+  PlayerName
+  Age
+  Gender
+  Country
+}
+
+ENTITY "Character" AS character {
+  +CharacterID : PK
+  CharacterName
+  +PlayerID : FK
+  CharacterLevel
+  CharacterClass
+  CharacterExperience
+}
+
+ENTITY "Guild" AS guild {
+  +GuildID : PK
+  GuildName
+  +GuildLeaderID : FK
+  GuildCreationDate
+}
+
+ENTITY "Item" AS item {
+  +ItemID : PK
+  ItemName
+  ItemType
+  ItemDescription
+  ItemLevel
+  ItemRarity
+}
+
+ENTITY "Inventory" AS inventory {
+  +InventoryID : PK
+  +CharacterID : FK
+  +ItemID : FK
+  Quantity
+}
+
+ENTITY "Quest" AS quest {
+  +QuestID : PK
+  QuestName
+  QuestDescription
+  QuestLevel
+  QuestReward
+}
+
+ENTITY "Achievement" AS achievement {
+  +AchievementID : PK
+  AchievementName
+  AchievementDescription
+  AchievementPoints
+}
+
+ENTITY "PlayerAchievement" AS player_achievement {
+  +PlayerAchievementID : PK
+  +PlayerID : FK
+  +AchievementID : FK
+  AchievementCompletionDate
+}
+
+ENTITY "Location" AS location {
+  +LocationID : PK
+  LocationName
+  LocationType
+}
+
+' Relationships
+game -- publisher : "1" - "N"
+game -- developer : "1" - "N"
+player -- character : "1" - "N"
+player -- guild : "1" - "N"
+character -- inventory : "1" - "N"
+character -- quest : "1" - "N"
+player -- achievement : "N" - "N" : player_achievement
+game -- location : "1" - "N"
+
+@enduml
