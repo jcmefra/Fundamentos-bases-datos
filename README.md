@@ -27,3 +27,65 @@ Este repositorio contiene mis apuntes del curso de Fundamentos de Bases de Datos
 10. **¿Por qué aprender bases de datos hoy?**: Reflexión sobre la relevancia de aprender bases de datos en el mundo actual.
 
 Espero que estos apuntes del curso sean útiles para tu aprendizaje y te ayuden a comprender mejor los fundamentos de las bases de datos.
+
+# Proyecto del curso: Base de datos de juego RPG
+
+Se realizaron diagramas consultas SQL para crear una base de datos de un juego de rol (RPG, Role-Playing Game). La base de datos está diseñada para gestionar varios aspectos del juego RPG, incluyendo jugadores, personajes, gremios, objetos, misiones, logros y más.
+
+## Esquema de la Base de Datos
+
+El esquema de la base de datos se representa mediante diagramas PlantUML, que ofrecen una vista general de la estructura de la base de datos y las relaciones entre las entidades.
+
+### Diagrama de Entidad-Relación (ER)
+![Diagrama ER](./Er_relations_videogame.png)
+
+### Diagrama de Entidad-Relación Normalizado
+![Diagrama ER Normalizado](./Er_videogame_1NF.png)
+
+## Consultas SQL
+
+El repositorio incluye consultas SQL para crear las tablas de la base de datos y llenarlas con datos iniciales. A continuación, se presentan algunas de las tablas clave y sus consultas asociadas:
+
+- **Tabla de Jugadores:** Contiene información de los jugadores.
+  - Consulta SQL: [Crear Tabla de Jugadores](./SQL%20Files%20RPG/Players.sql)
+
+- **Tabla de Gremios:** Almacena información sobre diferentes gremios.
+  - Consulta SQL: [Crear Tabla de Gremios](./SQL%20Files%20RPG/Guilds.sql)
+
+- **Tabla de Personajes:** Gestiona datos de personajes y sus asociaciones con jugadores.
+  - Consulta SQL: [Crear Tabla de Personajes](./SQL%20Files%20RPG/Characters.sql)
+
+- **Tabla de Objetos:** Almacena detalles de objetos para el juego.
+  - Consulta SQL: [Crear Tabla de Objetos](./SQL%20Files%20RPG/Item.sql)
+
+- **Tabla de Inventario:** Realiza un seguimiento de los objetos en el inventario de un personaje.
+  - Consulta SQL: [Crear Tabla de Inventario](./SQL%20Files%20RPG/Inventory.sql)
+
+- **Tabla de Misiones:** Gestiona detalles de misiones y recompensas.
+  - Consulta SQL: [Crear Tabla de Misiones](./SQL%20Files%20RPG/Quest.sql)
+
+- **Tabla de Logros:** Contiene logros y sus puntos asociados.
+  - Consulta SQL: [Crear Tabla de Logros](./SQL%20Files%20RPG/Achievement.sql)
+
+- **Tabla de Logros de Jugadores:** Realiza un seguimiento de los logros de los jugadores.
+  - Consulta SQL: [Crear Tabla de Logros de Jugadores](./SQL%20Files%20RPG/PlayerAchievement.sql)
+
+- **Tabla de Localizaciones:** Almacena información sobre ubicaciones dentro del juego.
+  - Consulta SQL: [Crear Tabla de Localizaciones](./SQL%20Files%20RPG/Location.sql)
+
+- **Tabla de Juego:** Gestiona información sobre el juego RPG, incluyendo su título, fecha de lanzamiento, editor y desarrollador.
+  - Consulta SQL: [Crear Tabla de Juego](./SQL%20Files%20RPG/Game.sql)
+
+- **Tabla de Desarrolladores:** Contiene información sobre los desarrolladores del juego.
+  - Consulta SQL: [Crear Tabla de Desarrolladores](./SQL%20Files%20RPG/Developer.sql)
+
+- **Tabla de Editores:** Almacena información sobre los editores del juego.
+  - Consulta SQL: [Crear Tabla de Editores](./SQL%20Files%20RPG/Publisher.sql)
+
+
+## Uso
+
+Puedes utilizar estas consultas SQL para configurar la base de datos RPG y llenarla con datos iniciales. Personaliza los datos y el esquema según tus requisitos para tu juego RPG.
+
+
+
