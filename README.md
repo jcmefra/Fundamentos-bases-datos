@@ -36,11 +36,11 @@ Se realizaron diagramas consultas SQL para crear una base de datos de un juego d
 
 El esquema de la base de datos se representa mediante diagramas PlantUML, que ofrecen una vista general de la estructura de la base de datos y las relaciones entre las entidades.
 
-### Diagrama de Entidad-Relación (ER)
+### Diagrama de Entidad-Relación Preliminar (ER)
 ![Diagrama ER](./Er_relations_videogame.png)
 
-### Diagrama de Entidad-Relación Normalizado
-![Diagrama ER Normalizado](./Er_videogame_1NF.png)
+### Diagrama de Entidad-Relación Final
+![Diagrama ER Normalizado](./EER_Diagram_Final.png)
 
 ## Consultas SQL
 
