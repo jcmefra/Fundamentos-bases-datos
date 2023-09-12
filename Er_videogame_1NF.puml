@@ -23,12 +23,13 @@ ENTITY "Developer" AS developer {
   DeveloperName
 }
 
-ENTITY "Player" AS player {
+entity "Player" as player {
   +PlayerID : PK
   PlayerName
   Age
   Gender
   Country
+  +GuildID : FK
 }
 
 ENTITY "Character" AS character {
@@ -40,12 +41,12 @@ ENTITY "Character" AS character {
   CharacterExperience
 }
 
-ENTITY "Guild" AS guild {
+entity "Guild" as guild {
   +GuildID : PK
   GuildName
-  +GuildLeaderID : FK
   GuildCreationDate
 }
+
 
 ENTITY "Item" AS item {
   +ItemID : PK
@@ -92,10 +93,10 @@ ENTITY "Location" AS location {
 }
 
 ' Relationships
-game -- publisher : "1" - "N"
-game -- developer : "1" - "N"
+game -- publisher : "N" - "1"
+game -- developer : "N" - "1"
 player -- character : "1" - "N"
-player -- guild : "1" - "N"
+player -- guild : "N" - "1"
 character -- inventory : "1" - "N"
 character -- quest : "1" - "N"
 player -- achievement : "N" - "N" : player_achievement
