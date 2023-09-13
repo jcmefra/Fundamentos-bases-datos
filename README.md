@@ -82,6 +82,7 @@ El repositorio incluye consultas SQL para crear las tablas de la base de datos y
 - **Tabla de Editores:** Almacena información sobre los editores del juego.
   - Consulta SQL: [Crear Tabla de Editores](./SQL%20Files%20RPG/Publisher.sql)
 
+**NOTA** Existen algunas consultas adicionales que son para fines prácticos de la clase, complementan los apuntes.
 
 ## Uso
 
