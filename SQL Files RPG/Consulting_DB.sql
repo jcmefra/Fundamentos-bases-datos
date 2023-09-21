@@ -4,4 +4,4 @@ FROM player_character AS pc
 	INNER JOIN inventory AS inv ON pc.CharacterID = inv.CharacterID
     INNER JOIN item ON inv.ItemID = item.ItemID
 GROUP BY pc.CharacterID
-ORDER BY cant_items DESC;
+ORDER BY cant_items DESC; 
